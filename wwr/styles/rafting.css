@@ -6,6 +6,7 @@
     --accent2-color: #826a02;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sand-serif;
+    --white: #fff;
 }
 
 * {
@@ -287,7 +288,7 @@ section.company_form form {
     font-size: 1.25em;
     padding: 5px 20px;
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--white);
     border: none;
     border-radius: 5px;
     cursor: pointer;

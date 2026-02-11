@@ -217,6 +217,10 @@ main.contact {
     color: var(--primary-color);
 }
 
+.company__map iframe {
+    border: 0;
+}
+
 fieldset {
     border: none;
     padding: 0;

@@ -79,7 +79,7 @@ div.hero {
     position: absolute;
     bottom: .5rem;
     right: 1rem;
-    background-color: white;
+    background-color: var(--white);
     opacity: .7;
     color: var(--accent1-color);
     padding: 1rem;

@@ -617,3 +617,22 @@ section.home-grid {
 .trips figcaption {
     font-weight: 700;
 }
+
+@media screen and (max-width: 600px) {
+
+    .hero-msg {
+        font-size: 1rem;
+    }
+
+    .home-trip-link {
+        font-size: .5rem;
+        top: 10rem;
+    }
+
+    .home-trip-link a {
+        padding: .5rem;
+        font-size: .8rem;
+        margin-top: .2rem;
+        font-weight: 400;
+    }
+}

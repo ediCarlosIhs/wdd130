@@ -361,8 +361,6 @@ textarea {
 
     position: absolute;
     top: 1rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
     color: var(--third-color);
     font-size: 3rem;
@@ -370,6 +368,8 @@ textarea {
     background-color: rgba(0, 0, 0, 0.5);
     padding: .5rem;
     border-radius: 10px;
+    text-align: center;
+    width: 100%;
 }
 
 .home-trip-link {
@@ -411,10 +411,10 @@ textarea {
     color: var(--third-color);
 }
 
-.home-main section {
+/* .home-main section {
     width: 840px;
     margin: 0 auto;
-}
+} */
 
 .home-grid {
     display: grid;
@@ -423,6 +423,7 @@ textarea {
 
 .newsletter-box {
     grid-column: 1 / 2;
+    padding: 0 1rem;
 }
 
 .home-additional img {
@@ -433,10 +434,6 @@ textarea {
 .home-additional {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-.newsletter-box {
-    padding: 0 1rem;
 }
 
 .newsletter-box h2 {

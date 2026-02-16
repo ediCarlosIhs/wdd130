@@ -13,6 +13,7 @@
     --table-line: #c3e4f4;
     --light-dark: #3e3e3e;
     --light-white: #f3f3f3;
+    --forth-color: #e70100;
 }
 
 * {
@@ -564,28 +565,26 @@ textarea {
 }
 
 .contact__trip {
-    margin: 0;
-    padding: 0;
+    margin: 50px auto;
     grid-column: 1 / 4;
 }
 
 .contact__trip a {
-    display: flex;
-    width: 100%;
-    height: 100%;
+    /* display: inline-block;X */
     text-transform: uppercase;
-    justify-content: center;
-    align-items: center;
     text-decoration: none;
-    background-color: var(--table-head);
+    background-color: var(--primary-color);
     font-weight: 700;
-    color: var(--primary-color);
-    padding: 2rem;
+    color: var(--light-white);
+    padding: 1rem 2rem;
+    border-radius: 10px;
 }
 
 .contact__trip a:hover {
-    background-color: var(--primary-color);
-    color: var(--table-head)
+    background-color: var(--primary-hover);
+    color: var(--light-white);
+    /* border: 1px solid var(--third-color); */
+    transform: translateX(2px);
 }
 
 .trips h2 {

@@ -79,7 +79,7 @@ article {
     padding: 8px;
 }
 
-div.hero {
+.hero {
     position: relative;
 }
 
@@ -205,7 +205,7 @@ footer nav img {
 }
 
 /* contact */
-main.contact {
+.contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -243,12 +243,12 @@ textarea {
     padding: .5rem;
 }
 
-section.company_form {
+.company_form {
     margin: 0;
     padding: 0;
 }
 
-section.company_form form {
+.company_form form {
     padding: 1rem;
 }
 
@@ -410,12 +410,12 @@ section.company_form form {
     color: var(--third-color);
 }
 
-main.home-main section {
+.home-main section {
     width: 840px;
     margin: 0 auto;
 }
 
-section.home-grid {
+.home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }

@@ -333,19 +333,24 @@ section.company_form form {
 }
 
 /* home page */
-main.home-main {
+/* main.home-main {
     width: 100%;
-}
+} */
 
-main.home-main .home-banner {
+.home-banner {
     position: relative;
-}
-
-main.home-main .home-banner img {
     width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-main.home-main .home-banner h1.hero-msg {
+.home-banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-msg {
 
     position: absolute;
     top: 1rem;
@@ -360,7 +365,7 @@ main.home-main .home-banner h1.hero-msg {
     border-radius: 10px;
 }
 
-main.home-main .home-trip-link {
+.home-trip-link {
     position: absolute;
     top: 8rem;
     left: 50%;
@@ -368,7 +373,7 @@ main.home-main .home-trip-link {
     text-align: center;
 }
 
-main.home-main .home-trip-link p {
+.home-trip-link p {
     font-weight: 700;
     color: var(--white);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -378,7 +383,7 @@ main.home-main .home-trip-link p {
     border-radius: 10px;
 }
 
-main.home-main .home-trip-link a {
+.home-trip-link a {
     background-color: var(--third-color);
     color: var(--white);
     text-decoration: none;
@@ -391,10 +396,12 @@ main.home-main .home-trip-link a {
     transition: 0.3s;
 }
 
-main.home-main .home-trip-link a:hover {
+.home-trip-link a:hover {
     /* background-color: var(--primary-color-80); */
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: var(--white);
+    color: var(--third-color);
 }
 
 main.home-main section {

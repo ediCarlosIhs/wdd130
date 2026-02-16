@@ -1,6 +1,7 @@
 :root {
     --primary-color: #0667cc;
     --primary-color-80: #0667cccc;
+    --primary-hover: #037fff;
     --secondary-color: #8f9d3d;
     --accent1-color: #0e171e;
     --accent2-color: #826a02;
@@ -10,6 +11,8 @@
     --third-color: #ffbf43;
     --table-head: #7ccdf3;
     --table-line: #c3e4f4;
+    --light-dark: #3e3e3e;
+    --light-white: #f3f3f3;
 }
 
 * {
@@ -170,7 +173,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr 150px;
     align-items: center;
-    border-top: 2px solid var(--primary-color-80);
+    /* border-top: 2px solid var(--primary-color-80); */
+    background-color: var(--light-dark);
 }
 
 footer p,
@@ -190,8 +194,9 @@ footer .socialmedia {
 }
 
 footer p {
-    color: var(--accent2-color);
+    color: var(--light-white);
     font-weight: 700;
+    padding: 0 1rem;
 }
 
 footer nav img {
@@ -300,8 +305,9 @@ section.company_form form {
 }
 
 .company_form .button button:hover {
-    /* background-color: var(--primary-color-80); */
-    color: var(--accent1-color);
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    /* color: var(--accent1-color); */
 }
 
 .employees {
@@ -460,10 +466,16 @@ section.home-grid {
     font-size: 1.25em;
     padding: 5px 20px;
     background-color: var(--primary-color);
-    color: var(--white);
+    color: var(--light-white);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+}
+
+.newsletter-box button:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    /* color: var(--primary-color); */
 }
 
 .home-additional {
@@ -487,75 +499,77 @@ section.home-grid {
 
 /* trips page */
 
-main.trip-main {
+.trip-main {
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
 
-main.trip-main .table {
+.trip-main .table {
     grid-column: 1 / 4;
-}
-
-main.trip-main .contact {
-    grid-column: 1 / 2;
-}
-
-main.trip-main .trips {
-    grid-column: 2 / 4;
-}
-
-section.table {
-    margin: 0;
+    margin: 0 0 1rem 0;
     padding: 0;
 }
 
-main.trip-main table {
+.trip-main .table table {
     border-collapse: collapse;
     letter-spacing: 1px;
-    margin-bottom: .5rem;
 }
 
-main.trip-main table thead {
+.trip-main .contact {
+    grid-column: 1 / 4;
+}
+
+.trips {
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: 3fr;
+    margin: 0 0 .5rem 0;
+    padding: 0;
+}
+
+.trip-main table thead {
     background-color: var(--table-head);
 }
 
-main.trip-main caption {
+.trip-main caption {
     background: var(--primary-color);
     padding: .5rem;
     color: white;
     font-weight: 700;
 }
 
-main.trip-main table ul {
+.trip-main table ul {
     list-style-type: disc;
     padding: 0;
     margin-left: 20px;
 }
 
-main.trip-main table li {
+.trip-main table li {
     margin-bottom: .5rem;
+    line-height: 1.5;
 }
 
-main.trip-main table th,
-main.trip-main table td {
+.trip-main table th,
+.trip-main table td {
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: .5rem;
 }
 
-main.trip-main table tr span {
+.trip-main table tr span {
     font-weight: 700;
 }
 
-main.trip-main table tbody tr:nth-child(odd) {
+.trip-main table tbody tr:nth-child(odd) {
     background-color: var(--table-line);
 }
 
-section.contact {
-    margin: 0 .5rem .5rem 0;
+.contact__trip {
+    margin: 0;
     padding: 0;
+    grid-column: 1 / 4;
 }
 
-section.contact a {
+.contact__trip a {
     display: flex;
     width: 100%;
     height: 100%;
@@ -566,46 +580,40 @@ section.contact a {
     background-color: var(--table-head);
     font-weight: 700;
     color: var(--primary-color);
+    padding: 2rem;
 }
 
-section.contact a:hover {
+.contact__trip a:hover {
     background-color: var(--primary-color);
     color: var(--table-head)
 }
 
-section.trips {
-    display: grid;
-    grid-template-columns: 3fr;
-    margin: 0 0 .5rem 0;
-    padding: 0;
-}
-
-section.trips h2 {
+.trips h2 {
     text-align: center;
     padding: 1rem;
 }
 
-section.trips div {
+.trips div {
     display: flex;
     justify-content: space-between;
 }
 
-section.trips h2 {
+.trips h2 {
     grid-column: 1 / 4;
 }
 
-section.trips img {
+.trips img {
     max-width: 150px;
     height: 100%;
 }
 
-section.trips figure {
+.trips figure {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
 }
 
-section.trips figcaption {
+.trips figcaption {
     font-weight: 700;
 }
